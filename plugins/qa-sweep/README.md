@@ -88,7 +88,7 @@ A Markdown file with these `##` sections. The skill reads them by heading.
 | `Sanitizers` | The configure, build and run commands for the sanitizer pass, with `<selection>` where the area's test selection goes. Or `none`. |
 | `Review focus` | What counts as a defect in this codebase, beyond the reviewer's general checklist. |
 
-Keep the commands to `git`, `cmake`, `ctest`, `date`, `nproc` and `mkdir`,
+Keep the commands to `cmake`, `ctest`, `date`, `nproc`, `mkdir` and the read-only `git` subcommands,
 which the skill pre-approves. Another command still runs in auto mode, but
 goes through its classifier, and in a mode that asks for permission it stalls
 an unattended run.
