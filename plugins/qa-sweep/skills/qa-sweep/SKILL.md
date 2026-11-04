@@ -155,6 +155,19 @@ Sanitizers: <passed / which reported / none configured>
 🤖 Generated with [Claude Code](https://claude.com/claude-code) by the daily QA sweep
 ```
 
+File it with the body passed inline, so nothing is written to the checkout:
+
+```bash
+gh issue create --repo <repo> --label qa-sweep \
+  --title "QA sweep YYYY-MM-DD: <area>" \
+  --body "$(cat <<'BODY'
+<the body above>
+BODY
+)"
+```
+
+`gh issue create` prints the new issue's URL; its number is the last part.
+
 Leave out a section with no entries. If the sweep found nothing, still file
 the issue, saying so, and close it right away:
 `gh issue close <n> --repo <repo> --reason completed`. The closed issue keeps
