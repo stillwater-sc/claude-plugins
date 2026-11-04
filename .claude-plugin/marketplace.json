@@ -1,0 +1,15 @@
+{
+  "name": "stillwater-plugins",
+  "description": "Claude Code plugins shared across the Stillwater Supercomputing repositories",
+  "owner": {
+    "name": "Stillwater Supercomputing, Inc.",
+    "url": "https://github.com/stillwater-sc"
+  },
+  "plugins": [
+    {
+      "name": "qa-sweep",
+      "source": "./plugins/qa-sweep",
+      "description": "Daily QA sweep of a C++ repository: build and test, review recent commits, a rotating deep pass with sanitizers, findings filed as one GitHub issue"
+    }
+  ]
+}
