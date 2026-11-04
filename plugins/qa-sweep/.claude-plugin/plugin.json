@@ -1,0 +1,12 @@
+{
+  "name": "qa-sweep",
+  "version": "0.1.0",
+  "description": "Daily QA sweep of a C++ repository, driven by a per-repo config file: build and test, review the commits since the last sweep, a rotating deep pass with ASan/UBSan, and one GitHub issue with the findings",
+  "author": {
+    "name": "Stillwater Supercomputing, Inc.",
+    "url": "https://github.com/stillwater-sc"
+  },
+  "repository": "https://github.com/stillwater-sc/claude-plugins",
+  "license": "MIT",
+  "keywords": ["qa", "code-review", "c++", "sanitizers", "scheduled"]
+}
